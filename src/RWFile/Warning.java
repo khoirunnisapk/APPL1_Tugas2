@@ -71,6 +71,8 @@ public class Warning
         System.out.println (exception);
      } catch (NumberFormatException e) {
         System.out.println ("Format error in input file: " + e);
-        }
+     } catch (InputMismatchException ex){
+         System.out.println ("Format error in input file: " + ex);
+     }
  }
 } 
