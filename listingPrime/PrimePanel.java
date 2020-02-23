@@ -70,7 +70,7 @@ public class ButtonListener implements ActionListener
         for (int i = 3; i <= num; i += 2) {
            boolean foundDivisor = false;
            int j = 3;
-           while (j < Math.floor(Math.sqrt(i)) && !foundDivisor) {
+           while (j <= Math.floor(Math.sqrt(i)) && !foundDivisor) {
                 if (i % j == 0)
                     foundDivisor = true;
                 else
